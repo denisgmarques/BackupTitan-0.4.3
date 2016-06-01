@@ -3,6 +3,7 @@ Shell Scripts for backup and restore - Titan-0.4.3
 
 # Installation and Configuration
 - Copy backup and restore scripts to TITAN_HOME/bin directory
+- Change TITAN_HOME variable in both scripts (in first lines)
 - chmod 755 backup
 - chmod 755 restore
 
