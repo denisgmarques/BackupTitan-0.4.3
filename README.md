@@ -8,10 +8,13 @@ Shell Scripts for backup and restore - Titan-0.4.3
 
 # Backup syntax
 
-backup <<keyspace>>
-
+```bash
+backup <keyspace>
+```
 ! The snapshot will be save in TITAN_HOME/backup folder !
 
 # restore syntax
- 
-Use: restore <<snapshot keyspace>> [destination keyspace]
+
+```bash 
+restore <snapshot keyspace> [destination keyspace]
+```
