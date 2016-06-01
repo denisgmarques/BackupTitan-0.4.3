@@ -29,13 +29,13 @@ else
       mkdir "${TITAN_BACKUP}"
    fi
  
-   # Se existir um backup antigo apaga
+   # Delete .old folder, if exist.
    if [ -d "${TITAN_BACKUP}/${1}.old" ]
    then
       rm -rf "${TITAN_BACKUP}/${1}.old"
    fi
 
-   # Salva o backup atual como antigo
+   # Save the last backup as .old
    if [ -d "${TITAN_BACKUP}/${1}" ]
    then
       mv "${TITAN_BACKUP}/${1}" "${TITAN_BACKUP}/${1}.old"
